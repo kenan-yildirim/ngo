@@ -22,6 +22,8 @@ function initMap(bird) {
 	request.query = bird;
 
   service = new google.maps.places.PlacesService(map);
+  
+
 
   service.findPlaceFromQuery(request, function(results, status) {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -45,5 +47,4 @@ function createMarker(place) {
     infowindow.open(map, this);
   });
 }
-
 
