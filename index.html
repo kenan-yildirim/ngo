@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1>Hampton Roads NGOs</h1>
+        <div class="group">
+            <div id="map"></div>
+            <div class="btn-group">
+                <button class="button" onclick="initMap('operation smiles')">Operation Smiles</button>
+                <button class="button" onclick="initMap('Samaritan House')">Samaritan House</button>
+                <button class="button" onclick="initMap('Make A Wish Foundation')">Make A Wish Foundation</button>
+                <button class="button" onclick="initMap('Operation Blessing')">Operation Blessing</button>
+                <button class="button" onclick="initMap('Alzheimer\'s Association')">Alzheimer's Association</button>
+                <button class="button" onclick="initMap('American Diabetes Association')">American Diabetes Association</button>
+                <button class="button" onclick="initMap('VOLUNTEER Hampton Roads')">VOLUNTEER Hampton Roads</button>
+                <button class="button" onclick="initMap('USO JEB Little Creek')">USO JEB Little Creek</button>
+                <button class="button" onclick="initMap('Rotary Club of Norfolk')">Rotary Club of Norfolk</button>
+                <button class="button" onclick="initMap('Habitat for Humanity of South Hampton Roads')">Habitat for Humanity of South Hampton Roads</button>
+                <button class="button" onclick="initMap('Orphan\'s Promise')">Orphan's Promise</button>
+            </div>
+        </div>
+            
+        <h3>Information Details</h3>
+            
+        <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="https://cdn.pixabay.com/photo/2012/04/11/13/48/joker-28309_960_720.png" alt="Avatar" width="300px">
+            </div>
+            <div class="flip-card-back">
+                <h1>Name</h1> 
+                <p>Details</p> 
+                <p>Details</p>
+            </div>
+            </div>
+        </div>
+            
+        <!-- Replace the value of the key parameter with your own API key. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&libraries=places&callback=initMap" async defer></script>
+        <script src="script.js"></script>
+    </body>
+</html>
