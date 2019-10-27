@@ -26,11 +26,14 @@ h1 {
 h3 {
   color: red;
   text-align: justify;
-  font-size: 10vw;
 }
 
 label {
   color: black;
+}
+
+#label_tree {
+  font-size: 1vw;
 }
 
 .group {
@@ -87,10 +90,6 @@ label {
   padding: 10px;
   color: blue;
   font-size: 20px;
-}
-
-span {
-  font-size: 10vw;
 }
 
 /*
