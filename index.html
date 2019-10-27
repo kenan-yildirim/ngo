@@ -6,36 +6,35 @@
         <title>NGO</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="defaultMap()">
         <h1>Hampton Roads NGOs</h1>
         <div class="group">
             <div id="map"></div>
             <div class="btn-group">
-                <button class="button" onclick="initMap('operation smiles')">Operation Smiles</button>
-                <button class="button" onclick="initMap('Samaritan House')">Samaritan House</button>
-                <button class="button" onclick="initMap('Make A Wish Foundation')">Make A Wish Foundation</button>
-                <button class="button" onclick="initMap('Operation Blessing')">Operation Blessing</button>
-                <button class="button" onclick="initMap('Alzheimer\'s Association')">Alzheimer's Association</button>
-                <button class="button" onclick="initMap('American Diabetes Association')">American Diabetes Association</button>
-                <button class="button" onclick="initMap('VOLUNTEER Hampton Roads')">VOLUNTEER Hampton Roads</button>
-                <button class="button" onclick="initMap('USO JEB Little Creek')">USO JEB Little Creek</button>
-                <button class="button" onclick="initMap('Rotary Club of Norfolk')">Rotary Club of Norfolk</button>
-                <button class="button" onclick="initMap('Habitat for Humanity of South Hampton Roads')">Habitat for Humanity of South Hampton Roads</button>
-                <button class="button" onclick="initMap('Orphan\'s Promise')">Orphan's Promise</button>
+                <button class="button" onclick="initMap('operation smiles'); info('Operation Smiles')">Operation Smiles</button>
+                <button class="button" onclick="initMap('Samaritan House'); info('Samaritan House')">Samaritan House</button>
+                <button class="button" onclick="initMap('Make A Wish Foundation'); info('Make A Wish Foundation')">Make A Wish Foundation</button>
+                <button class="button" onclick="initMap('Operation Blessing'); info('Operation Blessing')">Operation Blessing</button>
+                <button class="button" onclick="initMap('Alzheimer\'s Association'); info('Alzheimer\'s Association')">Alzheimer's Association</button>
+                <button class="button" onclick="initMap('American Diabetes Association'); info('American Diabetes Association')">American Diabetes Association</button>
+                <button class="button" onclick="initMap('VOLUNTEER Hampton Roads'); info('VOLUNTEER Hampton Roads')">VOLUNTEER Hampton Roads</button>
+                <button class="button" onclick="initMap('USO JEB Little Creek'); info('USO JEB Little Creek')">USO JEB Little Creek</button>
+                <button class="button" onclick="initMap('Rotary Club of Norfolk'); info('Rotary Club of Norfolk')">Rotary Club of Norfolk</button>
+                <button class="button" onclick="initMap('Habitat for Humanity of South Hampton Roads'); info('Habitat for Humanity of South Hampton Roads')">Habitat for Humanity of South Hampton Roads</button>
+                <button class="button" onclick="initMap('Orphan\'s Promise'); info('Orphan\'s Promise')">Orphan's Promise</button>
             </div>
-            <div class="flip-card">
-                    <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="https://cdn.pixabay.com/photo/2012/04/11/13/48/joker-28309_960_720.png" alt="Avatar" width="300px">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>Name</h1> 
-                        <p>Details</p> 
-                        <p>Details</p>
-                    </div>
-                    </div>
-                </div>
+            <div class="info-card">
+                <form>
+                    <h3>Name: <label id="label_one">Operations Smiles</label></h3>
+                    <h3>Web Site: <label id="label_two"><a href="https://operationsmile.org">operationsmile.org</a></label></h3>
+                    <h3>Info: <label id="label_tree">Operation Smile is a nonprofit medical service organization founded in 1982 by Dr. William P. Magee, Jr. and his wife Kathy Magee. It is headquartered in Virginia Beach, Virginia. </br> </br>In addition to providing cleft lip and palate repair surgeries to children worldwide, Operation Smile works as a non-governmental organization to reduce the occurrence of cleft lips and palates worldwide; develops ambassadorships to raise awareness of cleft issues; sponsors a world care program for international cases requiring special care; organizes foundations worldwide to assist countries in reaching self-sufficiency with cleft surgeries; hosts a U.S. care network to assist families in the U.S. with cleft issues and develops and administers worldwide education programs related to cleft issues; and organizes student leadership programs.</label></h3>
+                </form>          
+            </div>
+            <div class="disclaimer">
+                <p>This is a test web site. Please contact <a href="mailto:kenanyildirim05@gmail.com">kenanyildirim05@gmail.com</a> for any comments, suggestions or corrections.</p>
+            </div>
         </div>
+        
             
             
    
